@@ -1,0 +1,162 @@
+/* Main container */
+.streamlist-card {
+  width: 95%;
+  max-width: 1400px;
+  margin: 40px auto;
+  background: #f8f9fb;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.streamlist-card h1 {
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+.streamlist-card p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.streamlist-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.streamlist-form input {
+  flex: 1;
+  min-width: 220px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.streamlist-form button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.streamlist-form button:hover {
+  background: #1d4ed8;
+}
+
+/* 🔥 THIS IS THE KEY PART (3 columns) */
+.sections-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* Each column */
+.category-section {
+  background: white;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  min-height: 450px;
+}
+
+/* Section titles */
+.category-section h2 {
+  margin-bottom: 12px;
+  color: #111827;
+}
+
+/* Items */
+.media-item {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+/* Add this right below */
+.media-item input {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  width: 100%;
+}
+
+/* Info */
+.media-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* Buttons */
+.media-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.media-actions button {
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #e5e7eb;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.media-actions button:hover {
+  background: #d1d5db;
+}
+
+/* View all */
+.view-button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #e2e8f0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.view-button:hover {
+  background: #cbd5f5;
+}
+
+/* Rating */
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.rating-row select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.rating-text {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #475569;
+}
+
+/* 📱 Mobile */
+@media (max-width: 900px) {
+  .sections-container {
+    grid-template-columns: 1fr;
+  }
+}

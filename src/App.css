@@ -1,19 +1,23 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base */
 body {
   font-family: Arial, sans-serif;
   background: lightgray;
   color: #222;
 }
 
+/* App wrapper */
 .app {
   min-height: 100vh;
 }
 
+/* Navbar */
 .navigationbar {
   display: flex;
   flex-direction: row-reverse;
@@ -30,7 +34,6 @@ body {
 
 .nav-links {
   display: flex;
-  align-items: right;
   gap: 1.3rem;
 }
 
@@ -51,57 +54,18 @@ body {
   background: #000000;
 }
 
+/* Page layout */
 .page-container {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   padding: 3rem 1rem;
-}
-
-.card {
-  background: white;
   width: 100%;
-  max-width: 600px;
-  padding: 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
 }
 
-.card h2 {
-  margin-bottom: 1rem;
-  color: #111827;
-}
-
-.card p {
-  margin-bottom: 1.5rem;
-  color: #4b5563;
-}
-
-.form {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.form input {
-  flex: 1;
-  min-width: 250px;
-  padding: 0.8rem;
+.media-item input {
+  padding: 6px 8px;
+  border-radius: 6px;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.form button {
-  padding: 0.8rem 1.2rem;
-  border: none;
-  background: #2563eb;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.form button:hover {
-  background: #1d4ed8;
+  width: 100%;
 }
